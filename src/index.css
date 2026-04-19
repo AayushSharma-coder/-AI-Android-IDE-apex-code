@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --workbench-bg: #1e1e1e;
+  --workbench-fg: #cccccc;
+  
+  /* Elegant Dark Theme Variables */
+  --bg-dark: #0a0a0a;
+  --bg-surface: #1e1e1e;
+  --bg-editor: #151515;
+  --text-primary: #e0e0e0;
+  --text-muted: #858585;
+  --accent: #007acc;
+  --border-color: #333333;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--workbench-bg)] text-[var(--workbench-fg)];
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer base {
+  body {
+    @apply antialiased overflow-hidden select-none;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
