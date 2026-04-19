@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ApexCode</string>
+    <string name="title_activity_main">ApexCode</string>
+    <string name="package_name">com.umang.apexcode</string>
+    <string name="custom_url_scheme">com.umang.apexcode</string>
+</resources>
